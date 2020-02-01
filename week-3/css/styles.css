@@ -1,0 +1,106 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+body a:hover{
+    background-color: gray;
+    text-decoration: none;
+}
+
+/* Navigation styling */
+#navigation{
+    background-color: maroon;
+    /* height: 5.5em; */
+    border-radius: 2;
+}
+#nav-brand{
+    display: block;
+}
+#brand{
+    margin-top: auto;
+    margin-bottom: auto;
+    color: lightgray;
+    font-weight: bold;
+    font-size: 2em;
+
+}
+#navbar-list{
+    list-style: none;
+    font-size: 30px;
+    /* margin-top: 10px; */
+    margin-top: 3px;
+    /* margin-bottom: auto; */
+}
+#navbar-list li{
+    float: left;
+    margin-left: 10px;
+}
+#navbar-list li a{
+    color: lightgray;
+    display: block;
+}
+#nav-button{
+    margin-top: 7px;
+    border: 2px solid white;
+}
+#nav-button span.icon-bar{
+    border: 1px solid white;
+}
+/* End navigation styling */
+
+/* Main content styling */
+#main-content .single-dish{
+    background-color: lightgray;
+    padding-top: 10px;
+}
+#main-content .single-dish p{
+    margin: 5px 10px -15px 10px;
+    line-height: 18px;
+}
+#main-content .single-dish .back-to-top{
+    /* display: block; */
+    text-align: right;
+    margin-right: 5px;
+}
+body #main-content .single-dish .back-to-top a:hover{
+    background-color: initial;
+    text-decoration-line: underline;
+}
+#main-content{
+    margin-bottom: 10px;
+}
+#main-content .single-portion{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+/* End amin content styling */
+@media (max-width: 767px){
+    #navbar-list{
+        /* width: 100%; */
+        padding: 0;
+        margin: 0;
+        margin-top: -10px;
+        /* height: 0.8em; */
+        margin-bottom: -7px;
+    }
+    #navbar-list li{
+        float: none;
+        /* width: 100%; */
+        text-align: center;
+        /* height: 80%; */
+        padding: 0;
+        margin: 0;
+    }
+    #navbar-list li a:hover{
+        background-color: gray;
+    }
+    #navbar-list hr{
+        margin: 0;
+        padding: 0;
+    }
+
+    #main-content .single-portion{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
